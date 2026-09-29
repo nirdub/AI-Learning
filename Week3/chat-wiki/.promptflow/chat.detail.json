@@ -1,0 +1,337 @@
+{
+  "flow_runs": [
+    {
+      "run_id": "2e948508-5014-404d-983a-915bb8bbc0d8_0",
+      "status": "Completed",
+      "error": null,
+      "inputs": {
+        "chat_history": [
+          {
+            "inputs": {
+              "question": "What is ChatGPT?"
+            },
+            "outputs": {
+              "answer": "ChatGPT is a chatbot product developed by OpenAI. It is powered by the Generative Pre-trained Transformer (GPT) series of language models, with GPT-4 being the latest version. ChatGPT uses natural language processing to generate responses to user inputs in a conversational manner. It was released as ChatGPT Plus, a premium version, which provides enhanced features and access to the GPT-4 based version of OpenAI's API. ChatGPT allows users to interact and have conversations with the language model, utilizing both text and image inputs. It is designed to be more reliable, creative, and capable of handling nuanced instructions compared to previous versions. However, it is important to note that while GPT-4 improves upon its predecessors, it still retains some of the same limitations and challenges."
+            }
+          },
+          {
+            "inputs": {
+              "question": "tell me about python in 1 sentence"
+            },
+            "outputs": {
+              "answer": "Python is a high-level, versatile programming language known for its readability and ease of use, making it popular for web development, data analysis, artificial intelligence, and more. \n\nSOURCES: https://en.wikipedia.org/w/index.php?search=Python is a high-level, versatile programming language known for its readability and ease of use, making it popular for web development, data analysis, artificial intelligence, and more."
+            }
+          }
+        ],
+        "question": "when was it invented"
+      },
+      "output": {
+        "answer": "Python was invented by Guido van Rossum and was first released in February 1991.\n\nSOURCES: https://en.wikipedia.org/w/index.php?search=Python"
+      },
+      "metrics": null,
+      "request": null,
+      "parent_run_id": "2e948508-5014-404d-983a-915bb8bbc0d8",
+      "root_run_id": "2e948508-5014-404d-983a-915bb8bbc0d8",
+      "source_run_id": null,
+      "flow_id": "chat_with_wikipedia",
+      "start_time": "2026-09-19T01:53:21.953668Z",
+      "end_time": "2026-09-19T01:53:29.672846Z",
+      "index": 0,
+      "api_calls": [
+        {
+          "name": "flow",
+          "node_name": "flow",
+          "type": "Flow",
+          "start_time": 1789748601.953668,
+          "end_time": 1789748609.672846,
+          "children": [],
+          "system_metrics": {
+            "duration": 7.719178,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "total_tokens": 0
+          },
+          "inputs": {
+            "chat_history": [
+              {
+                "inputs": {
+                  "question": "What is ChatGPT?"
+                },
+                "outputs": {
+                  "answer": "ChatGPT is a chatbot product developed by OpenAI. It is powered by the Generative Pre-trained Transformer (GPT) series of language models, with GPT-4 being the latest version. ChatGPT uses natural language processing to generate responses to user inputs in a conversational manner. It was released as ChatGPT Plus, a premium version, which provides enhanced features and access to the GPT-4 based version of OpenAI's API. ChatGPT allows users to interact and have conversations with the language model, utilizing both text and image inputs. It is designed to be more reliable, creative, and capable of handling nuanced instructions compared to previous versions. However, it is important to note that while GPT-4 improves upon its predecessors, it still retains some of the same limitations and challenges."
+                }
+              },
+              {
+                "inputs": {
+                  "question": "tell me about python in 1 sentence"
+                },
+                "outputs": {
+                  "answer": "Python is a high-level, versatile programming language known for its readability and ease of use, making it popular for web development, data analysis, artificial intelligence, and more. \n\nSOURCES: https://en.wikipedia.org/w/index.php?search=Python is a high-level, versatile programming language known for its readability and ease of use, making it popular for web development, data analysis, artificial intelligence, and more."
+                }
+              }
+            ],
+            "question": "when was it invented"
+          },
+          "output": {
+            "answer": "<generator object post_process_chat_api_response.<locals>.generator at 0x000001F788EE5540>"
+          },
+          "error": null
+        }
+      ],
+      "name": "",
+      "description": "",
+      "tags": null,
+      "system_metrics": {
+        "duration": 7.719178,
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "result": {
+        "answer": "Python was invented by Guido van Rossum and was first released in February 1991.\n\nSOURCES: https://en.wikipedia.org/w/index.php?search=Python"
+      },
+      "upload_metrics": false,
+      "otel_trace_id": null,
+      "message_format": "basic"
+    }
+  ],
+  "node_runs": [
+    {
+      "node": "extract_query_from_question",
+      "flow_run_id": "2e948508-5014-404d-983a-915bb8bbc0d8",
+      "run_id": "2e948508-5014-404d-983a-915bb8bbc0d8_extract_query_from_question_0",
+      "status": "Completed",
+      "inputs": {
+        "deployment_name": "gpt-4o-mini",
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "max_tokens": 256,
+        "response_format": {
+          "type": "text"
+        },
+        "question": "when was it invented",
+        "chat_history": [
+          {
+            "inputs": {
+              "question": "What is ChatGPT?"
+            },
+            "outputs": {
+              "answer": "ChatGPT is a chatbot product developed by OpenAI. It is powered by the Generative Pre-trained Transformer (GPT) series of language models, with GPT-4 being the latest version. ChatGPT uses natural language processing to generate responses to user inputs in a conversational manner. It was released as ChatGPT Plus, a premium version, which provides enhanced features and access to the GPT-4 based version of OpenAI's API. ChatGPT allows users to interact and have conversations with the language model, utilizing both text and image inputs. It is designed to be more reliable, creative, and capable of handling nuanced instructions compared to previous versions. However, it is important to note that while GPT-4 improves upon its predecessors, it still retains some of the same limitations and challenges."
+            }
+          },
+          {
+            "inputs": {
+              "question": "tell me about python in 1 sentence"
+            },
+            "outputs": {
+              "answer": "Python is a high-level, versatile programming language known for its readability and ease of use, making it popular for web development, data analysis, artificial intelligence, and more. \n\nSOURCES: https://en.wikipedia.org/w/index.php?search=Python is a high-level, versatile programming language known for its readability and ease of use, making it popular for web development, data analysis, artificial intelligence, and more."
+            }
+          }
+        ],
+        "_inputs_to_escape": [
+          "question",
+          "chat_history"
+        ]
+      },
+      "output": "when was Python invented",
+      "metrics": null,
+      "error": null,
+      "parent_run_id": "2e948508-5014-404d-983a-915bb8bbc0d8_0",
+      "start_time": "2026-09-19T01:53:21.958504Z",
+      "end_time": "2026-09-19T01:53:22.879411Z",
+      "index": 0,
+      "api_calls": [],
+      "cached_run_id": null,
+      "cached_flow_run_id": null,
+      "logs": {
+        "stdout": "",
+        "stderr": ""
+      },
+      "system_metrics": {
+        "duration": 0.920907
+      },
+      "result": "when was Python invented",
+      "message_format": "basic"
+    },
+    {
+      "node": "get_wiki_url",
+      "flow_run_id": "2e948508-5014-404d-983a-915bb8bbc0d8",
+      "run_id": "2e948508-5014-404d-983a-915bb8bbc0d8_get_wiki_url_0",
+      "status": "Completed",
+      "inputs": {
+        "entity": "when was Python invented",
+        "count": 2
+      },
+      "output": [
+        "https://en.wikipedia.org/w/index.php?search=Python ",
+        "https://en.wikipedia.org/w/index.php?search=Monty Python's Flying Circus"
+      ],
+      "metrics": null,
+      "error": null,
+      "parent_run_id": "2e948508-5014-404d-983a-915bb8bbc0d8_0",
+      "start_time": "2026-09-19T01:53:22.881137Z",
+      "end_time": "2026-09-19T01:53:25.047965Z",
+      "index": 0,
+      "api_calls": [],
+      "cached_run_id": null,
+      "cached_flow_run_id": null,
+      "logs": {
+        "stdout": "[2026-09-19T01:53:25+0000] Could not find when was Python invented. Similar ententity: ['Python ', \"Monty Python's Flying Circus\"].\n",
+        "stderr": ""
+      },
+      "system_metrics": {
+        "duration": 2.166828
+      },
+      "result": [
+        "https://en.wikipedia.org/w/index.php?search=Python ",
+        "https://en.wikipedia.org/w/index.php?search=Monty Python's Flying Circus"
+      ],
+      "message_format": "basic"
+    },
+    {
+      "node": "search_result_from_url",
+      "flow_run_id": "2e948508-5014-404d-983a-915bb8bbc0d8",
+      "run_id": "2e948508-5014-404d-983a-915bb8bbc0d8_search_result_from_url_0",
+      "status": "Completed",
+      "inputs": {
+        "url_list": [
+          "https://en.wikipedia.org/w/index.php?search=Python ",
+          "https://en.wikipedia.org/w/index.php?search=Monty Python's Flying Circus"
+        ],
+        "count": 10
+      },
+      "output": [
+        [
+          "https://en.wikipedia.org/w/index.php?search=Python ",
+          "Python may refer to:. Main pageContentsCurrent eventsRandom articleAbout WikipediaContact us. HelpLearn to editCommunity portalRecent changesUpload fileSpecial pages. Donate. Create account. Log in. Donate. Create account. Log in. (Top)."
+        ],
+        [
+          "https://en.wikipedia.org/w/index.php?search=Monty Python's Flying Circus",
+          "Monty Python's Flying Circus (also known as simply Monty Python) is a British surreal sketch comedy series created by and starring Graham Chapman, John Cleese, Eric Idle, Terry Jones, Michael Palin, and Terry Gilliam, who became known collectively as \"Monty Python\", or the \"Pythons\". The first episode was recorded at the BBC on 7 September 1969 and premiered on 5 October on BBC1, with 45 episodes airing over four series from 1969 to 1974, plus two episodes for German TV. A feature film adaptation of several sketches, And Now for Something Completely Different, was released in 1971.. The series stands out for its use of absurd situations, mixed with risqué and innuendo-laden humour, sight gags, and observational sketches without punchlines. Live-action segments were broken up with animations by Gilliam, often merging with the live action to form segues. The overall format used for the series followed and elaborated upon the style used by Spike Milligan in his groundbreaking series Q..., rather than the traditional sketch show format. The Pythons play the majority of the series's characters, along with supporting cast members including Carol Cleveland (referred to by the team as the unofficial \"Seventh Python\"), Connie Booth (Cleese's first wife), series producer Ian MacNaughton, Ian Davidson, musician Neil Innes, and Fred Tomlinson and the Fred Tomlinson Singers for musical numbers.[1][2]. The programme came about as the six Pythons, having met each other through university and in various radio and television programmes in the 1960s, sought to make a new sketch comedy show unlike anything else on British television. Much of the humour in the series targeted the idiosyncrasies of British life, especially that of professionals, as well as aspects of politics. Their comedy is often pointedly intellectual, with numerous erudite references to philosophers and literary figures and their works."
+        ]
+      ],
+      "metrics": null,
+      "error": null,
+      "parent_run_id": "2e948508-5014-404d-983a-915bb8bbc0d8_0",
+      "start_time": "2026-09-19T01:53:25.048924Z",
+      "end_time": "2026-09-19T01:53:28.795835Z",
+      "index": 0,
+      "api_calls": [],
+      "cached_run_id": null,
+      "cached_flow_run_id": null,
+      "logs": {
+        "stdout": "",
+        "stderr": ""
+      },
+      "system_metrics": {
+        "duration": 3.746911
+      },
+      "result": [
+        [
+          "https://en.wikipedia.org/w/index.php?search=Python ",
+          "Python may refer to:. Main pageContentsCurrent eventsRandom articleAbout WikipediaContact us. HelpLearn to editCommunity portalRecent changesUpload fileSpecial pages. Donate. Create account. Log in. Donate. Create account. Log in. (Top)."
+        ],
+        [
+          "https://en.wikipedia.org/w/index.php?search=Monty Python's Flying Circus",
+          "Monty Python's Flying Circus (also known as simply Monty Python) is a British surreal sketch comedy series created by and starring Graham Chapman, John Cleese, Eric Idle, Terry Jones, Michael Palin, and Terry Gilliam, who became known collectively as \"Monty Python\", or the \"Pythons\". The first episode was recorded at the BBC on 7 September 1969 and premiered on 5 October on BBC1, with 45 episodes airing over four series from 1969 to 1974, plus two episodes for German TV. A feature film adaptation of several sketches, And Now for Something Completely Different, was released in 1971.. The series stands out for its use of absurd situations, mixed with risqué and innuendo-laden humour, sight gags, and observational sketches without punchlines. Live-action segments were broken up with animations by Gilliam, often merging with the live action to form segues. The overall format used for the series followed and elaborated upon the style used by Spike Milligan in his groundbreaking series Q..., rather than the traditional sketch show format. The Pythons play the majority of the series's characters, along with supporting cast members including Carol Cleveland (referred to by the team as the unofficial \"Seventh Python\"), Connie Booth (Cleese's first wife), series producer Ian MacNaughton, Ian Davidson, musician Neil Innes, and Fred Tomlinson and the Fred Tomlinson Singers for musical numbers.[1][2]. The programme came about as the six Pythons, having met each other through university and in various radio and television programmes in the 1960s, sought to make a new sketch comedy show unlike anything else on British television. Much of the humour in the series targeted the idiosyncrasies of British life, especially that of professionals, as well as aspects of politics. Their comedy is often pointedly intellectual, with numerous erudite references to philosophers and literary figures and their works."
+        ]
+      ],
+      "message_format": "basic"
+    },
+    {
+      "node": "process_search_result",
+      "flow_run_id": "2e948508-5014-404d-983a-915bb8bbc0d8",
+      "run_id": "2e948508-5014-404d-983a-915bb8bbc0d8_process_search_result_0",
+      "status": "Completed",
+      "inputs": {
+        "search_result": [
+          [
+            "https://en.wikipedia.org/w/index.php?search=Python ",
+            "Python may refer to:. Main pageContentsCurrent eventsRandom articleAbout WikipediaContact us. HelpLearn to editCommunity portalRecent changesUpload fileSpecial pages. Donate. Create account. Log in. Donate. Create account. Log in. (Top)."
+          ],
+          [
+            "https://en.wikipedia.org/w/index.php?search=Monty Python's Flying Circus",
+            "Monty Python's Flying Circus (also known as simply Monty Python) is a British surreal sketch comedy series created by and starring Graham Chapman, John Cleese, Eric Idle, Terry Jones, Michael Palin, and Terry Gilliam, who became known collectively as \"Monty Python\", or the \"Pythons\". The first episode was recorded at the BBC on 7 September 1969 and premiered on 5 October on BBC1, with 45 episodes airing over four series from 1969 to 1974, plus two episodes for German TV. A feature film adaptation of several sketches, And Now for Something Completely Different, was released in 1971.. The series stands out for its use of absurd situations, mixed with risqué and innuendo-laden humour, sight gags, and observational sketches without punchlines. Live-action segments were broken up with animations by Gilliam, often merging with the live action to form segues. The overall format used for the series followed and elaborated upon the style used by Spike Milligan in his groundbreaking series Q..., rather than the traditional sketch show format. The Pythons play the majority of the series's characters, along with supporting cast members including Carol Cleveland (referred to by the team as the unofficial \"Seventh Python\"), Connie Booth (Cleese's first wife), series producer Ian MacNaughton, Ian Davidson, musician Neil Innes, and Fred Tomlinson and the Fred Tomlinson Singers for musical numbers.[1][2]. The programme came about as the six Pythons, having met each other through university and in various radio and television programmes in the 1960s, sought to make a new sketch comedy show unlike anything else on British television. Much of the humour in the series targeted the idiosyncrasies of British life, especially that of professionals, as well as aspects of politics. Their comedy is often pointedly intellectual, with numerous erudite references to philosophers and literary figures and their works."
+          ]
+        ]
+      },
+      "output": "Content: Python may refer to:. Main pageContentsCurrent eventsRandom articleAbout WikipediaContact us. HelpLearn to editCommunity portalRecent changesUpload fileSpecial pages. Donate. Create account. Log in. Donate. Create account. Log in. (Top).\nSource: https://en.wikipedia.org/w/index.php?search=Python \n\nContent: Monty Python's Flying Circus (also known as simply Monty Python) is a British surreal sketch comedy series created by and starring Graham Chapman, John Cleese, Eric Idle, Terry Jones, Michael Palin, and Terry Gilliam, who became known collectively as \"Monty Python\", or the \"Pythons\". The first episode was recorded at the BBC on 7 September 1969 and premiered on 5 October on BBC1, with 45 episodes airing over four series from 1969 to 1974, plus two episodes for German TV. A feature film adaptation of several sketches, And Now for Something Completely Different, was released in 1971.. The series stands out for its use of absurd situations, mixed with risqué and innuendo-laden humour, sight gags, and observational sketches without punchlines. Live-action segments were broken up with animations by Gilliam, often merging with the live action to form segues. The overall format used for the series followed and elaborated upon the style used by Spike Milligan in his groundbreaking series Q..., rather than the traditional sketch show format. The Pythons play the majority of the series's characters, along with supporting cast members including Carol Cleveland (referred to by the team as the unofficial \"Seventh Python\"), Connie Booth (Cleese's first wife), series producer Ian MacNaughton, Ian Davidson, musician Neil Innes, and Fred Tomlinson and the Fred Tomlinson Singers for musical numbers.[1][2]. The programme came about as the six Pythons, having met each other through university and in various radio and television programmes in the 1960s, sought to make a new sketch comedy show unlike anything else on British television. Much of the humour in the series targeted the idiosyncrasies of British life, especially that of professionals, as well as aspects of politics. Their comedy is often pointedly intellectual, with numerous erudite references to philosophers and literary figures and their works.\nSource: https://en.wikipedia.org/w/index.php?search=Monty Python's Flying Circus",
+      "metrics": null,
+      "error": null,
+      "parent_run_id": "2e948508-5014-404d-983a-915bb8bbc0d8_0",
+      "start_time": "2026-09-19T01:53:28.796630Z",
+      "end_time": "2026-09-19T01:53:28.796793Z",
+      "index": 0,
+      "api_calls": [],
+      "cached_run_id": null,
+      "cached_flow_run_id": null,
+      "logs": {
+        "stdout": "",
+        "stderr": ""
+      },
+      "system_metrics": {
+        "duration": 0.000163
+      },
+      "result": "Content: Python may refer to:. Main pageContentsCurrent eventsRandom articleAbout WikipediaContact us. HelpLearn to editCommunity portalRecent changesUpload fileSpecial pages. Donate. Create account. Log in. Donate. Create account. Log in. (Top).\nSource: https://en.wikipedia.org/w/index.php?search=Python \n\nContent: Monty Python's Flying Circus (also known as simply Monty Python) is a British surreal sketch comedy series created by and starring Graham Chapman, John Cleese, Eric Idle, Terry Jones, Michael Palin, and Terry Gilliam, who became known collectively as \"Monty Python\", or the \"Pythons\". The first episode was recorded at the BBC on 7 September 1969 and premiered on 5 October on BBC1, with 45 episodes airing over four series from 1969 to 1974, plus two episodes for German TV. A feature film adaptation of several sketches, And Now for Something Completely Different, was released in 1971.. The series stands out for its use of absurd situations, mixed with risqué and innuendo-laden humour, sight gags, and observational sketches without punchlines. Live-action segments were broken up with animations by Gilliam, often merging with the live action to form segues. The overall format used for the series followed and elaborated upon the style used by Spike Milligan in his groundbreaking series Q..., rather than the traditional sketch show format. The Pythons play the majority of the series's characters, along with supporting cast members including Carol Cleveland (referred to by the team as the unofficial \"Seventh Python\"), Connie Booth (Cleese's first wife), series producer Ian MacNaughton, Ian Davidson, musician Neil Innes, and Fred Tomlinson and the Fred Tomlinson Singers for musical numbers.[1][2]. The programme came about as the six Pythons, having met each other through university and in various radio and television programmes in the 1960s, sought to make a new sketch comedy show unlike anything else on British television. Much of the humour in the series targeted the idiosyncrasies of British life, especially that of professionals, as well as aspects of politics. Their comedy is often pointedly intellectual, with numerous erudite references to philosophers and literary figures and their works.\nSource: https://en.wikipedia.org/w/index.php?search=Monty Python's Flying Circus",
+      "message_format": "basic"
+    },
+    {
+      "node": "augmented_chat",
+      "flow_run_id": "2e948508-5014-404d-983a-915bb8bbc0d8",
+      "run_id": "2e948508-5014-404d-983a-915bb8bbc0d8_augmented_chat_0",
+      "status": "Completed",
+      "inputs": {
+        "deployment_name": "gpt-4o-mini",
+        "temperature": 0.8,
+        "top_p": 1.0,
+        "max_tokens": 200,
+        "response_format": {
+          "type": "text"
+        },
+        "question": "when was it invented",
+        "chat_history": [
+          {
+            "inputs": {
+              "question": "What is ChatGPT?"
+            },
+            "outputs": {
+              "answer": "ChatGPT is a chatbot product developed by OpenAI. It is powered by the Generative Pre-trained Transformer (GPT) series of language models, with GPT-4 being the latest version. ChatGPT uses natural language processing to generate responses to user inputs in a conversational manner. It was released as ChatGPT Plus, a premium version, which provides enhanced features and access to the GPT-4 based version of OpenAI's API. ChatGPT allows users to interact and have conversations with the language model, utilizing both text and image inputs. It is designed to be more reliable, creative, and capable of handling nuanced instructions compared to previous versions. However, it is important to note that while GPT-4 improves upon its predecessors, it still retains some of the same limitations and challenges."
+            }
+          },
+          {
+            "inputs": {
+              "question": "tell me about python in 1 sentence"
+            },
+            "outputs": {
+              "answer": "Python is a high-level, versatile programming language known for its readability and ease of use, making it popular for web development, data analysis, artificial intelligence, and more. \n\nSOURCES: https://en.wikipedia.org/w/index.php?search=Python is a high-level, versatile programming language known for its readability and ease of use, making it popular for web development, data analysis, artificial intelligence, and more."
+            }
+          }
+        ],
+        "contexts": "Content: Python may refer to:. Main pageContentsCurrent eventsRandom articleAbout WikipediaContact us. HelpLearn to editCommunity portalRecent changesUpload fileSpecial pages. Donate. Create account. Log in. Donate. Create account. Log in. (Top).\nSource: https://en.wikipedia.org/w/index.php?search=Python \n\nContent: Monty Python's Flying Circus (also known as simply Monty Python) is a British surreal sketch comedy series created by and starring Graham Chapman, John Cleese, Eric Idle, Terry Jones, Michael Palin, and Terry Gilliam, who became known collectively as \"Monty Python\", or the \"Pythons\". The first episode was recorded at the BBC on 7 September 1969 and premiered on 5 October on BBC1, with 45 episodes airing over four series from 1969 to 1974, plus two episodes for German TV. A feature film adaptation of several sketches, And Now for Something Completely Different, was released in 1971.. The series stands out for its use of absurd situations, mixed with risqué and innuendo-laden humour, sight gags, and observational sketches without punchlines. Live-action segments were broken up with animations by Gilliam, often merging with the live action to form segues. The overall format used for the series followed and elaborated upon the style used by Spike Milligan in his groundbreaking series Q..., rather than the traditional sketch show format. The Pythons play the majority of the series's characters, along with supporting cast members including Carol Cleveland (referred to by the team as the unofficial \"Seventh Python\"), Connie Booth (Cleese's first wife), series producer Ian MacNaughton, Ian Davidson, musician Neil Innes, and Fred Tomlinson and the Fred Tomlinson Singers for musical numbers.[1][2]. The programme came about as the six Pythons, having met each other through university and in various radio and television programmes in the 1960s, sought to make a new sketch comedy show unlike anything else on British television. Much of the humour in the series targeted the idiosyncrasies of British life, especially that of professionals, as well as aspects of politics. Their comedy is often pointedly intellectual, with numerous erudite references to philosophers and literary figures and their works.\nSource: https://en.wikipedia.org/w/index.php?search=Monty Python's Flying Circus",
+        "_inputs_to_escape": [
+          "question",
+          "chat_history"
+        ]
+      },
+      "output": "<generator object post_process_chat_api_response.<locals>.generator at 0x000001F788EE5540>",
+      "metrics": null,
+      "error": null,
+      "parent_run_id": "2e948508-5014-404d-983a-915bb8bbc0d8_0",
+      "start_time": "2026-09-19T01:53:28.798061Z",
+      "end_time": "2026-09-19T01:53:29.670640Z",
+      "index": 0,
+      "api_calls": [],
+      "cached_run_id": null,
+      "cached_flow_run_id": null,
+      "logs": {
+        "stdout": "",
+        "stderr": ""
+      },
+      "system_metrics": {
+        "duration": 0.872579
+      },
+      "result": "<generator object post_process_chat_api_response.<locals>.generator at 0x000001F788EE5540>",
+      "message_format": "basic"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "nodeLayouts": {
+    "inputs": {
+      "x": 103.60003662109375,
+      "y": 48.400001525878906,
+      "index": -1
+    },
+    "outputs": {
+      "x": 220,
+      "y": 846,
+      "index": -1
+    },
+    "extract_query_from_question": {
+      "x": 227.5,
+      "y": 176,
+      "index": 0
+    },
+    "get_wiki_url": {
+      "x": 227.5,
+      "y": 310,
+      "index": 1
+    },
+    "search_result_from_url": {
+      "x": 227.5,
+      "y": 444,
+      "index": 2
+    },
+    "process_search_result": {
+      "x": 227.5,
+      "y": 578,
+      "index": 3
+    },
+    "augmented_chat": {
+      "x": 140,
+      "y": 712,
+      "index": 4
+    }
+  },
+  "orientation": "Vertical"
+}

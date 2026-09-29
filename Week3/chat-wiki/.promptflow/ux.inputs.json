@@ -1,0 +1,96 @@
+{
+  "chat_list": [
+    {
+      "name": "default",
+      "inputs": {
+        "question": "show me best learning material links ",
+        "chat_history": [
+          {
+            "inputs": {
+              "question": "What is the latest claude sonnet model?"
+            },
+            "outputs": {
+              "answer": "I don't have information on the latest Claude sonnet model. You may want to check the most recent updates from official sources or publications related to Claude AI models for the latest information.\n\nSOURCES:\n- None available within the provided content."
+            }
+          },
+          {
+            "inputs": {
+              "question": "What is the latest gpt model?"
+            },
+            "outputs": {
+              "answer": "The latest GPT model is GPT-5, which was released on August 7, 2025. GPT-5 is a multimodal large language model developed by OpenAI and is accessible through various products, including ChatGPT and Microsoft Copilot. It offers improvements over its predecessor, GPT-4, including faster response times, better coding and writing skills, and more accurate answers to health-related questions.\n\nSOURCES:\n- OpenAI's release information on GPT-5."
+            }
+          },
+          {
+            "inputs": {
+              "question": "hi"
+            },
+            "outputs": {
+              "answer": "Hello! How can I assist you today?"
+            }
+          },
+          {
+            "inputs": {
+              "question": "What is the capital of USA?"
+            },
+            "outputs": {
+              "answer": "The capital of the United States is Washington, D.C.\n\nSOURCES:\n- None available within the provided content."
+            }
+          },
+          {
+            "inputs": {
+              "question": "What is the capital of France?"
+            },
+            "outputs": {
+              "answer": "The capital of France has been Paris since its liberation in 1944.\n\nSOURCES:\n- https://en.wikipedia.org/w/index.php?search=capital of France"
+            }
+          },
+          {
+            "inputs": {
+              "question": "what is python programming"
+            },
+            "outputs": {
+              "answer": "Python programming refers to the use of the Python programming language, which is a general-purpose, interpreted, object-oriented, functional, multi-paradigm, and dynamically typed language. It is known for its emphasis on code readability and has a broad standard library. Python was created by Guido van Rossum and was first released in 1991. The language is widely used for various applications, including web development, data analysis, artificial intelligence, scientific computing, and automation.\n\nSOURCES:\n- https://en.wikipedia.org/w/index.php?search=Outline of the Python programming language"
+            }
+          },
+          {
+            "inputs": {
+              "question": "who was first user of python"
+            },
+            "outputs": {
+              "answer": "The first user of Python was its creator, Guido van Rossum. He developed Python in the late 1980s and released it to the public in February 1991. \n\nSOURCES:\n- None available within the provided content."
+            }
+          },
+          {
+            "inputs": {
+              "question": "when was it publicly accepted"
+            },
+            "outputs": {
+              "answer": "Python was publicly released in February 1991. This was the first version of Python (version 0.9.0), which included features such as classes and exception handling.\n\nSOURCES:\n- None available within the provided content."
+            }
+          },
+          {
+            "inputs": {
+              "question": "how easy is it to learn"
+            },
+            "outputs": {
+              "answer": "Python is often considered one of the easiest programming languages to learn because of its simple and readable syntax. Beginners find it intuitive since it allows them to focus on programming concepts rather than complex syntax rules. Additionally, Python has a large community, extensive libraries, and many resources available for learners, including tutorials and documentation, which further aids the learning process.\n\nSOURCES:\n- None available within the provided content."
+            }
+          },
+          {
+            "inputs": {
+              "question": "show me best learning material links "
+            },
+            "outputs": {
+              "answer": "I don't have specific links to the best learning materials for Python. However, I recommend exploring platforms like Codecademy, Coursera, edX, or the official Python website, where you can find various tutorials, courses, and documentation.\n\nSOURCES:\n- None available within the provided content."
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "prompty_chat_list": [],
+  "init": {
+    "flow.dag.yaml": {}
+  }
+}
