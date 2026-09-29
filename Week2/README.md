@@ -8,7 +8,7 @@ This week covers building agents using **Azure AI Foundry**. You will run four d
 |---|---|---|
 | Function Agent | `Function_agent/createAgent.py` | Creates an agent with a custom `fetch_weather` function tool — visible in the Azure AI Foundry portal |
 | Function Agent (Classic style) | `Function_agent/createAgent_classic.py` | Same as above but asks the agent its name instead of weather, demonstrating a different query pattern |
-| Code Interpreter Agent (streaming) | `codeinterpreter_agent/data_analysis_demo.py` | Uploads a CSV, streams code execution output live, saves generated chart locally |
+| Code Interpreter Agent (streaming) | `codeinterpreter_agent/data_analysis_demo.py` | Uploads a CSV, streams code execution output live, saves generated chart locally. Use Week2/Agents_Demo_code/codeinterpreter_agent/data_analysis_demo_1.py which has updated prompt to use Student name as variable and save the chart (image file) to Foundry |
 | Code Interpreter Agent (blocking) | `codeinterpreter_agent/data_analysis_demo_new_foundry.py` | Same analysis using a blocking `create_and_process` run — simpler code, no streaming |
 
 ---
