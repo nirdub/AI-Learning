@@ -1,0 +1,295 @@
+{
+    "analyzerId": "businesscardanalyser",
+    "apiVersion": "2025-11-01",
+    "createdAt": "2026-10-26T01:34:16Z",
+    "stringEncoding": "codePoint",
+    "warnings": [],
+    "contents": [
+        {
+            "path": "input1",
+            "markdown": "Contoso Ltd.\n\nMarie Duartes\nCustomer Advisor\n\nEmail: marie@contoso.com\nPhone: 555-010-9876\n",
+            "fields": {
+                "Company": {
+                    "type": "string",
+                    "valueString": "Contoso Ltd.",
+                    "spans": [
+                        {
+                            "offset": 0,
+                            "length": 12
+                        }
+                    ],
+                    "confidence": 0.912,
+                    "source": "D(1,29.0000,30.0000,85.0000,30.0000,85.0000,41.0000,29.0000,41.0000)"
+                },
+                "Name": {
+                    "type": "string",
+                    "valueString": "Marie Duartes",
+                    "spans": [
+                        {
+                            "offset": 14,
+                            "length": 13
+                        }
+                    ],
+                    "confidence": 0.883,
+                    "source": "D(1,29.0230,128.7597,96.2036,130.0038,95.9678,142.7401,28.7871,141.4961)"
+                },
+                "Title": {
+                    "type": "string",
+                    "valueString": "Customer Advisor",
+                    "spans": [
+                        {
+                            "offset": 28,
+                            "length": 16
+                        }
+                    ],
+                    "confidence": 0.883,
+                    "source": "D(1,29.0165,154.2395,110.2390,156.0052,109.9835,167.7605,28.7610,165.9948)"
+                },
+                "Email": {
+                    "type": "string",
+                    "valueString": "marie@contoso.com",
+                    "spans": [
+                        {
+                            "offset": 53,
+                            "length": 17
+                        }
+                    ],
+                    "confidence": 0.928,
+                    "source": "D(1,250.0000,130.0000,342.0000,131.0000,342.0000,142.0000,250.0000,142.0000)"
+                },
+                "Phone": {
+                    "type": "string",
+                    "valueString": "555-010-9876",
+                    "spans": [
+                        {
+                            "offset": 78,
+                            "length": 12
+                        }
+                    ],
+                    "confidence": 0.921,
+                    "source": "D(1,254.0000,155.0000,320.0000,155.0000,320.0000,166.0000,254.0000,167.0000)"
+                }
+            },
+            "kind": "document",
+            "startPageNumber": 1,
+            "endPageNumber": 1,
+            "unit": "pixel",
+            "pages": [
+                {
+                    "pageNumber": 1,
+                    "angle": 0,
+                    "width": 525,
+                    "height": 300,
+                    "spans": [
+                        {
+                            "offset": 0,
+                            "length": 91
+                        }
+                    ],
+                    "words": [
+                        {
+                            "content": "Contoso",
+                            "span": {
+                                "offset": 0,
+                                "length": 7
+                            },
+                            "confidence": 0.961,
+                            "source": "D(1,29,31,66,31,66,41,29,41)"
+                        },
+                        {
+                            "content": "Ltd",
+                            "span": {
+                                "offset": 8,
+                                "length": 3
+                            },
+                            "confidence": 0.966,
+                            "source": "D(1,68,31,82,30,82,41,68,41)"
+                        },
+                        {
+                            "content": ".",
+                            "span": {
+                                "offset": 11,
+                                "length": 1
+                            },
+                            "confidence": 0.988,
+                            "source": "D(1,82,30,85,30,85,41,82,41)"
+                        },
+                        {
+                            "content": "Marie",
+                            "span": {
+                                "offset": 14,
+                                "length": 5
+                            },
+                            "confidence": 0.992,
+                            "source": "D(1,29,130,56,130,56,142,29,141)"
+                        },
+                        {
+                            "content": "Duartes",
+                            "span": {
+                                "offset": 20,
+                                "length": 7
+                            },
+                            "confidence": 0.992,
+                            "source": "D(1,59,130,96,130,96,141,59,141)"
+                        },
+                        {
+                            "content": "Customer",
+                            "span": {
+                                "offset": 28,
+                                "length": 8
+                            },
+                            "confidence": 0.977,
+                            "source": "D(1,29,155,75,156,75,167,29,166)"
+                        },
+                        {
+                            "content": "Advisor",
+                            "span": {
+                                "offset": 37,
+                                "length": 7
+                            },
+                            "confidence": 0.985,
+                            "source": "D(1,76,156,110,156,110,167,76,167)"
+                        },
+                        {
+                            "content": "Email",
+                            "span": {
+                                "offset": 46,
+                                "length": 5
+                            },
+                            "confidence": 0.99,
+                            "source": "D(1,219,130,246,130,246,142,219,141)"
+                        },
+                        {
+                            "content": ":",
+                            "span": {
+                                "offset": 51,
+                                "length": 1
+                            },
+                            "confidence": 0.988,
+                            "source": "D(1,245,130,247,130,247,142,245,141)"
+                        },
+                        {
+                            "content": "marie@contoso.com",
+                            "span": {
+                                "offset": 53,
+                                "length": 17
+                            },
+                            "confidence": 0.716,
+                            "source": "D(1,250,130,342,131,342,142,250,142)"
+                        },
+                        {
+                            "content": "Phone",
+                            "span": {
+                                "offset": 71,
+                                "length": 5
+                            },
+                            "confidence": 0.992,
+                            "source": "D(1,219,155,249,155,249,167,219,167)"
+                        },
+                        {
+                            "content": ":",
+                            "span": {
+                                "offset": 76,
+                                "length": 1
+                            },
+                            "confidence": 0.999,
+                            "source": "D(1,249,155,252,155,252,167,249,167)"
+                        },
+                        {
+                            "content": "555-010-9876",
+                            "span": {
+                                "offset": 78,
+                                "length": 12
+                            },
+                            "confidence": 0.991,
+                            "source": "D(1,254,155,320,155,320,166,254,167)"
+                        }
+                    ],
+                    "lines": [
+                        {
+                            "content": "Contoso Ltd.",
+                            "source": "D(1,29,31,85,30,85,41,29,41)",
+                            "span": {
+                                "offset": 0,
+                                "length": 12
+                            }
+                        },
+                        {
+                            "content": "Marie Duartes",
+                            "source": "D(1,29,130,96,130,96,142,29,142)",
+                            "span": {
+                                "offset": 14,
+                                "length": 13
+                            }
+                        },
+                        {
+                            "content": "Customer Advisor",
+                            "source": "D(1,29,155,111,156,110,167,29,166)",
+                            "span": {
+                                "offset": 28,
+                                "length": 16
+                            }
+                        },
+                        {
+                            "content": "Email: marie@contoso.com",
+                            "source": "D(1,219,130,342,131,342,142,219,141)",
+                            "span": {
+                                "offset": 46,
+                                "length": 24
+                            }
+                        },
+                        {
+                            "content": "Phone: 555-010-9876",
+                            "source": "D(1,219,155,320,155,320,166,219,167)",
+                            "span": {
+                                "offset": 71,
+                                "length": 19
+                            }
+                        }
+                    ]
+                }
+            ],
+            "paragraphs": [
+                {
+                    "content": "Contoso Ltd.",
+                    "source": "D(1,29,31,85,30,85,41,29,41)",
+                    "span": {
+                        "offset": 0,
+                        "length": 12
+                    }
+                },
+                {
+                    "content": "Marie Duartes Customer Advisor",
+                    "source": "D(1,29,130,111,130,110,167,29,166)",
+                    "span": {
+                        "offset": 14,
+                        "length": 30
+                    }
+                },
+                {
+                    "content": "Email: marie@contoso.com Phone: 555-010-9876",
+                    "source": "D(1,219,130,342,131,342,167,219,167)",
+                    "span": {
+                        "offset": 46,
+                        "length": 44
+                    }
+                }
+            ],
+            "sections": [
+                {
+                    "span": {
+                        "offset": 0,
+                        "length": 90
+                    },
+                    "elements": [
+                        "/paragraphs/0",
+                        "/paragraphs/1",
+                        "/paragraphs/2"
+                    ]
+                }
+            ],
+            "analyzerId": "businesscardanalyser",
+            "mimeType": "image/jpeg"
+        }
+    ]
+}

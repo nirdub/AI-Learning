@@ -1,0 +1,40 @@
+{
+  "description": "Business card analyzer",
+  "baseAnalyzerId": "prebuilt-document",
+  "models": {
+    "completion": "gpt-4.1", #this model should be deployed and available
+    "embedding": "text-embedding-3-large" # content understanding uses these in the background to extract 
+  },
+  "config": {
+    "returnDetails": true
+  },
+  "fieldSchema": {
+    "fields": {
+      "Company": {
+        "type": "string",
+        "method": "extract",
+        "description": "Company or organization name" #descrition is important for llm (gpt) to understand what to undestand
+      },
+      "Name": {
+        "type": "string",
+        "method": "extract",
+        "description": "Contact's full name"
+      },
+      "Title": {
+        "type": "string",
+        "method": "extract",
+        "description": "Contact's job title"
+      },
+      "Email": {
+        "type": "string",
+        "method": "extract",
+        "description": "Contact's email address"
+      },
+      "Phone": {
+        "type": "string",
+        "method": "extract",
+        "description": "Contact's phone number"
+      }
+    }
+  }
+}

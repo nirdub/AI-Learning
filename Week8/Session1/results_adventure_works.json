@@ -1,0 +1,707 @@
+{
+    "analyzerId": "businesscardanalyser",
+    "apiVersion": "2025-11-01",
+    "createdAt": "2026-10-26T01:34:10Z",
+    "stringEncoding": "codePoint",
+    "warnings": [],
+    "contents": [
+        {
+            "path": "input1",
+            "markdown": "Dr. Avery Smith\nSenior Researcher\nCloud & Al Department\n\navery.smith@contoso.com\nhttps://www.contoso.com/\n\nmob: +44 (0) 7911 123456\ntel: +44 (0) 20 9876 5432\nfax: +44 (0) 20 6789 2345\n\n\n![Contoso 2 Kingdom Street Paddington, London, W2 6BD](figures/1.1)\n\n",
+            "fields": {
+                "Company": {
+                    "type": "string",
+                    "valueString": "Contoso",
+                    "spans": [
+                        {
+                            "offset": 188,
+                            "length": 7
+                        }
+                    ],
+                    "confidence": 0.884,
+                    "source": "D(1,1119.0000,1919.0000,2301.0000,1563.0000,2388.0000,1735.0000,1213.0000,2107.0000)"
+                },
+                "Name": {
+                    "type": "string",
+                    "valueString": "Dr. Avery Smith",
+                    "spans": [
+                        {
+                            "offset": 0,
+                            "length": 15
+                        }
+                    ],
+                    "confidence": 0.863,
+                    "source": "D(1,409.8638,1162.4327,1615.4236,873.0983,1644.7065,995.1104,439.1467,1284.4448)"
+                },
+                "Title": {
+                    "type": "string",
+                    "valueString": "Senior Researcher",
+                    "spans": [
+                        {
+                            "offset": 16,
+                            "length": 17
+                        }
+                    ],
+                    "confidence": 0.878,
+                    "source": "D(1,442.3500,1313.2760,1322.6343,1103.2238,1341.0477,1180.3905,460.7634,1390.4426)"
+                },
+                "Email": {
+                    "type": "string",
+                    "valueString": "avery.smith@contoso.com",
+                    "spans": [
+                        {
+                            "offset": 57,
+                            "length": 23
+                        }
+                    ],
+                    "confidence": 0.919,
+                    "source": "D(1,2095.0000,933.0000,2930.0000,699.0000,2961.0000,758.0000,2126.0000,993.0000)"
+                },
+                "Phone": {
+                    "type": "string",
+                    "valueString": "+44 (0) 7911 123456",
+                    "spans": [
+                        {
+                            "offset": 112,
+                            "length": 19
+                        }
+                    ],
+                    "confidence": 0.584,
+                    "source": "D(1,2425.8091,1043.3760,3081.5280,842.8032,3103.0000,913.0000,2447.2811,1113.5728)"
+                }
+            },
+            "kind": "document",
+            "startPageNumber": 1,
+            "endPageNumber": 1,
+            "unit": "pixel",
+            "pages": [
+                {
+                    "pageNumber": 1,
+                    "angle": -16.4245,
+                    "width": 4032,
+                    "height": 3024,
+                    "spans": [
+                        {
+                            "offset": 0,
+                            "length": 255
+                        }
+                    ],
+                    "words": [
+                        {
+                            "content": "Dr",
+                            "span": {
+                                "offset": 0,
+                                "length": 2
+                            },
+                            "confidence": 0.931,
+                            "source": "D(1,410,1163,597,1119,645,1234,458,1277)"
+                        },
+                        {
+                            "content": ".",
+                            "span": {
+                                "offset": 2,
+                                "length": 1
+                            },
+                            "confidence": 0.853,
+                            "source": "D(1,585,1122,617,1114,665,1229,633,1237)"
+                        },
+                        {
+                            "content": "Avery",
+                            "span": {
+                                "offset": 4,
+                                "length": 5
+                            },
+                            "confidence": 0.933,
+                            "source": "D(1,669,1102,1131,991,1180,1106,717,1217)"
+                        },
+                        {
+                            "content": "Smith",
+                            "span": {
+                                "offset": 10,
+                                "length": 5
+                            },
+                            "confidence": 0.985,
+                            "source": "D(1,1167,983,1595,878,1643,988,1216,1098)"
+                        },
+                        {
+                            "content": "Senior",
+                            "span": {
+                                "offset": 16,
+                                "length": 6
+                            },
+                            "confidence": 0.996,
+                            "source": "D(1,443,1316,761,1241,790,1311,471,1388)"
+                        },
+                        {
+                            "content": "Researcher",
+                            "span": {
+                                "offset": 23,
+                                "length": 10
+                            },
+                            "confidence": 0.995,
+                            "source": "D(1,790,1234,1311,1106,1340,1176,818,1304)"
+                        },
+                        {
+                            "content": "Cloud",
+                            "span": {
+                                "offset": 34,
+                                "length": 5
+                            },
+                            "confidence": 0.972,
+                            "source": "D(1,467,1413,748,1345,781,1422,500,1489)"
+                        },
+                        {
+                            "content": "&",
+                            "span": {
+                                "offset": 40,
+                                "length": 1
+                            },
+                            "confidence": 0.997,
+                            "source": "D(1,783,1336,860,1317,894,1394,816,1413)"
+                        },
+                        {
+                            "content": "Al",
+                            "span": {
+                                "offset": 42,
+                                "length": 2
+                            },
+                            "confidence": 0.528,
+                            "source": "D(1,886,1311,991,1285,1025,1362,920,1388)"
+                        },
+                        {
+                            "content": "Department",
+                            "span": {
+                                "offset": 45,
+                                "length": 10
+                            },
+                            "confidence": 0.976,
+                            "source": "D(1,1023,1277,1583,1137,1617,1212,1057,1354)"
+                        },
+                        {
+                            "content": "avery.smith@contoso.com",
+                            "span": {
+                                "offset": 57,
+                                "length": 23
+                            },
+                            "confidence": 0.986,
+                            "source": "D(1,2095,933,2930,699,2961,758,2126,993)"
+                        },
+                        {
+                            "content": "https://www.contoso.com/",
+                            "span": {
+                                "offset": 81,
+                                "length": 24
+                            },
+                            "confidence": 0.97,
+                            "source": "D(1,2110,1007,2979,762,3014,825,2144,1073)"
+                        },
+                        {
+                            "content": "mob",
+                            "span": {
+                                "offset": 107,
+                                "length": 3
+                            },
+                            "confidence": 0.995,
+                            "source": "D(1,2235,1103,2387,1056,2423,1119,2270,1166)"
+                        },
+                        {
+                            "content": ":",
+                            "span": {
+                                "offset": 110,
+                                "length": 1
+                            },
+                            "confidence": 0.998,
+                            "source": "D(1,2392,1054,2408,1049,2443,1113,2427,1118)"
+                        },
+                        {
+                            "content": "+",
+                            "span": {
+                                "offset": 112,
+                                "length": 1
+                            },
+                            "confidence": 0.999,
+                            "source": "D(1,2426,1044,2463,1032,2499,1096,2462,1107)"
+                        },
+                        {
+                            "content": "44",
+                            "span": {
+                                "offset": 113,
+                                "length": 2
+                            },
+                            "confidence": 0.998,
+                            "source": "D(1,2461,1033,2548,1006,2583,1071,2497,1097)"
+                        },
+                        {
+                            "content": "(",
+                            "span": {
+                                "offset": 116,
+                                "length": 1
+                            },
+                            "confidence": 0.999,
+                            "source": "D(1,2565,1001,2586,995,2622,1059,2601,1065)"
+                        },
+                        {
+                            "content": "0",
+                            "span": {
+                                "offset": 117,
+                                "length": 1
+                            },
+                            "confidence": 0.997,
+                            "source": "D(1,2586,995,2629,982,2664,1046,2622,1059)"
+                        },
+                        {
+                            "content": ")",
+                            "span": {
+                                "offset": 118,
+                                "length": 1
+                            },
+                            "confidence": 0.999,
+                            "source": "D(1,2629,982,2651,975,2686,1039,2664,1046)"
+                        },
+                        {
+                            "content": "7911",
+                            "span": {
+                                "offset": 120,
+                                "length": 4
+                            },
+                            "confidence": 0.94,
+                            "source": "D(1,2665,971,2821,924,2856,988,2700,1035)"
+                        },
+                        {
+                            "content": "123456",
+                            "span": {
+                                "offset": 125,
+                                "length": 6
+                            },
+                            "confidence": 0.876,
+                            "source": "D(1,2839,918,3067,849,3103,913,2875,982)"
+                        },
+                        {
+                            "content": "tel",
+                            "span": {
+                                "offset": 132,
+                                "length": 3
+                            },
+                            "confidence": 0.996,
+                            "source": "D(1,2329,1163,2421,1134,2456,1199,2364,1227)"
+                        },
+                        {
+                            "content": ":",
+                            "span": {
+                                "offset": 135,
+                                "length": 1
+                            },
+                            "confidence": 0.999,
+                            "source": "D(1,2424,1133,2441,1128,2477,1192,2460,1198)"
+                        },
+                        {
+                            "content": "+",
+                            "span": {
+                                "offset": 137,
+                                "length": 1
+                            },
+                            "confidence": 0.999,
+                            "source": "D(1,2462,1122,2499,1110,2535,1175,2498,1186)"
+                        },
+                        {
+                            "content": "44",
+                            "span": {
+                                "offset": 138,
+                                "length": 2
+                            },
+                            "confidence": 0.998,
+                            "source": "D(1,2498,1110,2585,1084,2621,1149,2534,1175)"
+                        },
+                        {
+                            "content": "(",
+                            "span": {
+                                "offset": 141,
+                                "length": 1
+                            },
+                            "confidence": 0.999,
+                            "source": "D(1,2602,1078,2624,1072,2660,1137,2638,1143)"
+                        },
+                        {
+                            "content": "0",
+                            "span": {
+                                "offset": 142,
+                                "length": 1
+                            },
+                            "confidence": 0.996,
+                            "source": "D(1,2623,1072,2667,1058,2703,1123,2659,1137)"
+                        },
+                        {
+                            "content": ")",
+                            "span": {
+                                "offset": 143,
+                                "length": 1
+                            },
+                            "confidence": 0.999,
+                            "source": "D(1,2669,1058,2689,1052,2725,1117,2704,1123)"
+                        },
+                        {
+                            "content": "20",
+                            "span": {
+                                "offset": 145,
+                                "length": 2
+                            },
+                            "confidence": 0.983,
+                            "source": "D(1,2703,1047,2787,1022,2822,1087,2739,1112)"
+                        },
+                        {
+                            "content": "9876",
+                            "span": {
+                                "offset": 148,
+                                "length": 4
+                            },
+                            "confidence": 0.887,
+                            "source": "D(1,2798,1018,2959,969,2995,1033,2834,1083)"
+                        },
+                        {
+                            "content": "5432",
+                            "span": {
+                                "offset": 153,
+                                "length": 4
+                            },
+                            "confidence": 0.924,
+                            "source": "D(1,2969,966,3126,918,3162,981,3004,1030)"
+                        },
+                        {
+                            "content": "fax",
+                            "span": {
+                                "offset": 158,
+                                "length": 3
+                            },
+                            "confidence": 0.992,
+                            "source": "D(1,2368,1243,2476,1210,2512,1277,2404,1310)"
+                        },
+                        {
+                            "content": ":",
+                            "span": {
+                                "offset": 161,
+                                "length": 1
+                            },
+                            "confidence": 0.999,
+                            "source": "D(1,2478,1209,2497,1204,2533,1271,2514,1276)"
+                        },
+                        {
+                            "content": "+",
+                            "span": {
+                                "offset": 163,
+                                "length": 1
+                            },
+                            "confidence": 0.999,
+                            "source": "D(1,2520,1196,2556,1185,2593,1253,2556,1264)"
+                        },
+                        {
+                            "content": "44",
+                            "span": {
+                                "offset": 164,
+                                "length": 2
+                            },
+                            "confidence": 0.998,
+                            "source": "D(1,2554,1186,2641,1159,2678,1227,2591,1253)"
+                        },
+                        {
+                            "content": "(",
+                            "span": {
+                                "offset": 167,
+                                "length": 1
+                            },
+                            "confidence": 0.999,
+                            "source": "D(1,2659,1154,2680,1147,2717,1215,2696,1221)"
+                        },
+                        {
+                            "content": "0",
+                            "span": {
+                                "offset": 168,
+                                "length": 1
+                            },
+                            "confidence": 0.994,
+                            "source": "D(1,2680,1147,2724,1133,2761,1201,2717,1215)"
+                        },
+                        {
+                            "content": ")",
+                            "span": {
+                                "offset": 169,
+                                "length": 1
+                            },
+                            "confidence": 0.999,
+                            "source": "D(1,2726,1133,2747,1126,2784,1193,2763,1200)"
+                        },
+                        {
+                            "content": "20",
+                            "span": {
+                                "offset": 171,
+                                "length": 2
+                            },
+                            "confidence": 0.964,
+                            "source": "D(1,2763,1121,2845,1095,2884,1162,2800,1188)"
+                        },
+                        {
+                            "content": "6789",
+                            "span": {
+                                "offset": 174,
+                                "length": 4
+                            },
+                            "confidence": 0.801,
+                            "source": "D(1,2860,1090,3017,1040,3056,1107,2898,1158)"
+                        },
+                        {
+                            "content": "2345",
+                            "span": {
+                                "offset": 179,
+                                "length": 4
+                            },
+                            "confidence": 0.94,
+                            "source": "D(1,3029,1037,3187,986,3227,1051,3068,1103)"
+                        },
+                        {
+                            "content": "Contoso",
+                            "span": {
+                                "offset": 188,
+                                "length": 7
+                            },
+                            "confidence": 0.986,
+                            "source": "D(1,1119,1919,2301,1563,2388,1735,1213,2107)"
+                        },
+                        {
+                            "content": "2",
+                            "span": {
+                                "offset": 196,
+                                "length": 1
+                            },
+                            "confidence": 0.984,
+                            "source": "D(1,1227,2139,1284,2120,1327,2211,1270,2231)"
+                        },
+                        {
+                            "content": "Kingdom",
+                            "span": {
+                                "offset": 198,
+                                "length": 7
+                            },
+                            "confidence": 0.986,
+                            "source": "D(1,1316,2110,1717,1975,1760,2065,1359,2201)"
+                        },
+                        {
+                            "content": "Street",
+                            "span": {
+                                "offset": 206,
+                                "length": 6
+                            },
+                            "confidence": 0.998,
+                            "source": "D(1,1746,1965,2018,1871,2061,1960,1789,2055)"
+                        },
+                        {
+                            "content": "Paddington",
+                            "span": {
+                                "offset": 213,
+                                "length": 10
+                            },
+                            "confidence": 0.995,
+                            "source": "D(1,1268,2262,1813,2073,1860,2168,1314,2359)"
+                        },
+                        {
+                            "content": ",",
+                            "span": {
+                                "offset": 223,
+                                "length": 1
+                            },
+                            "confidence": 0.999,
+                            "source": "D(1,1815,2072,1837,2064,1884,2160,1862,2168)"
+                        },
+                        {
+                            "content": "London",
+                            "span": {
+                                "offset": 225,
+                                "length": 6
+                            },
+                            "confidence": 0.995,
+                            "source": "D(1,1871,2052,2192,1938,2239,2033,1918,2148)"
+                        },
+                        {
+                            "content": ",",
+                            "span": {
+                                "offset": 231,
+                                "length": 1
+                            },
+                            "confidence": 0.999,
+                            "source": "D(1,2195,1937,2217,1929,2264,2024,2242,2032)"
+                        },
+                        {
+                            "content": "W2",
+                            "span": {
+                                "offset": 233,
+                                "length": 2
+                            },
+                            "confidence": 0.878,
+                            "source": "D(1,2241,1920,2380,1870,2428,1964,2289,2015)"
+                        },
+                        {
+                            "content": "6BD",
+                            "span": {
+                                "offset": 236,
+                                "length": 3
+                            },
+                            "confidence": 0.914,
+                            "source": "D(1,2402,1862,2569,1802,2616,1895,2449,1956)"
+                        }
+                    ],
+                    "lines": [
+                        {
+                            "content": "Dr. Avery Smith",
+                            "source": "D(1,410,1163,1615,877,1643,995,440,1277)",
+                            "span": {
+                                "offset": 0,
+                                "length": 15
+                            }
+                        },
+                        {
+                            "content": "Senior Researcher",
+                            "source": "D(1,443,1316,1322,1106,1340,1178,461,1389)",
+                            "span": {
+                                "offset": 16,
+                                "length": 17
+                            }
+                        },
+                        {
+                            "content": "Cloud & Al Department",
+                            "source": "D(1,467,1413,1598,1136,1618,1215,487,1490)",
+                            "span": {
+                                "offset": 34,
+                                "length": 21
+                            }
+                        },
+                        {
+                            "content": "avery.smith@contoso.com",
+                            "source": "D(1,2095,933,2943,698,2961,761,2113,993)",
+                            "span": {
+                                "offset": 57,
+                                "length": 23
+                            }
+                        },
+                        {
+                            "content": "https://www.contoso.com/",
+                            "source": "D(1,2110,1007,2995,761,3015,829,2131,1074)",
+                            "span": {
+                                "offset": 81,
+                                "length": 24
+                            }
+                        },
+                        {
+                            "content": "mob: +44 (0) 7911 123456",
+                            "source": "D(1,2234,1101,3082,849,3103,913,2255,1166)",
+                            "span": {
+                                "offset": 107,
+                                "length": 24
+                            }
+                        },
+                        {
+                            "content": "tel: +44 (0) 20 9876 5432",
+                            "source": "D(1,2329,1162,3141,917,3162,983,2350,1227)",
+                            "span": {
+                                "offset": 132,
+                                "length": 25
+                            }
+                        },
+                        {
+                            "content": "fax: +44 (0) 20 6789 2345",
+                            "source": "D(1,2368,1243,3205,985,3227,1054,2392,1310)",
+                            "span": {
+                                "offset": 158,
+                                "length": 25
+                            }
+                        },
+                        {
+                            "content": "Contoso",
+                            "source": "D(1,1119,1919,2333,1562,2389,1750,1179,2107)",
+                            "span": {
+                                "offset": 188,
+                                "length": 7
+                            }
+                        },
+                        {
+                            "content": "2 Kingdom Street",
+                            "source": "D(1,1227,2139,2030,1871,2062,1964,1259,2231)",
+                            "span": {
+                                "offset": 196,
+                                "length": 16
+                            }
+                        },
+                        {
+                            "content": "Paddington, London, W2 6BD",
+                            "source": "D(1,1268,2262,2582,1801,2617,1900,1304,2359)",
+                            "span": {
+                                "offset": 213,
+                                "length": 26
+                            }
+                        }
+                    ]
+                }
+            ],
+            "paragraphs": [
+                {
+                    "content": "Dr. Avery Smith Senior Researcher Cloud & Al Department",
+                    "source": "D(1,407,1164,1615,877,1693,1204,484,1491)",
+                    "span": {
+                        "offset": 0,
+                        "length": 55
+                    }
+                },
+                {
+                    "content": "avery.smith@contoso.com https://www.contoso.com/",
+                    "source": "D(1,2090,934,2976,689,3015,829,2129,1074)",
+                    "span": {
+                        "offset": 57,
+                        "length": 48
+                    }
+                },
+                {
+                    "content": "mob: +44 (0) 7911 123456 tel: +44 (0) 20 9876 5432 fax: +44 (0) 20 6789 2345",
+                    "source": "D(1,2234,1101,3159,826,3229,1061,2304,1336)",
+                    "span": {
+                        "offset": 107,
+                        "length": 76
+                    }
+                },
+                {
+                    "content": "Contoso 2 Kingdom Street Paddington, London, W2 6BD",
+                    "source": "D(1,1114,1921,2460,1451,2617,1900,1271,2371)",
+                    "span": {
+                        "offset": 188,
+                        "length": 51
+                    }
+                }
+            ],
+            "sections": [
+                {
+                    "span": {
+                        "offset": 0,
+                        "length": 253
+                    },
+                    "elements": [
+                        "/paragraphs/0",
+                        "/paragraphs/1",
+                        "/paragraphs/2",
+                        "/figures/0"
+                    ]
+                }
+            ],
+            "figures": [
+                {
+                    "source": "D(1,498,2091,2427,1469,2583,1941,644,2558)",
+                    "span": {
+                        "offset": 186,
+                        "length": 67
+                    },
+                    "elements": [
+                        "/paragraphs/3"
+                    ],
+                    "id": "1.1"
+                }
+            ],
+            "analyzerId": "businesscardanalyser",
+            "mimeType": "image/jpeg"
+        }
+    ]
+}
